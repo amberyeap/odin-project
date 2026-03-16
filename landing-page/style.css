@@ -1,0 +1,128 @@
+body {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+
+	/* necessary to remove the white gap between divs */
+	display:flex;
+	flex-direction: column;
+}
+
+header, footer, .section-one {
+	background-color: #1f2937;
+	color: #f9faf8;
+	padding: 0px 16px;
+}
+
+main {
+	flex: 1;
+}
+
+/* header section */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: 900;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	gap: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #e5e7eb;
+	font-size: 18px;
+}
+
+/* section one */
+
+.section-one {
+	display: flex;
+}
+
+.left-side {
+	margin: 16px;
+}
+
+.section-one h1 {
+	font-size: 48px;
+	color: #f9faf8;
+	font-weight: 900;
+}
+
+/* section two - some random info */
+.section-two {
+	text-align: center;
+	padding: 0px 16px;
+}
+
+.section-two h1 {
+	font-weight: 900;
+	font-size: 36px;
+	color: #1f2937;
+	text-align: center;
+}
+
+.cards {
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+}
+
+.card {
+	max-width: 200px;
+}
+
+.cards img {
+	width: 150px;
+	height: 150px;
+	border: 3px solid #3882f6;
+	border-radius: 10px;
+}
+
+.card p {
+	color: #1f2937;
+	font-size: 18px;
+}
+
+/* section three - quote */
+
+.section-three {
+	background-color: #e5e7eb;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+#quote {
+	font-style: italic;
+	font-weight: 300;
+	color: #1f2937;
+	font-size: 36px;
+	padding: 0px 32px;
+}
+
+#name {
+	font-weight: bold;
+	align-self: flex-end;
+	font-size: 24px;
+}
+
+/* section four - call to action */
+
+
+/* footer */
+footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
