@@ -1,128 +1,152 @@
-body {
-	font-family: Roboto, sans-serif;
+* {
 	margin: 0;
-
-	/* necessary to remove the white gap between divs */
-	display:flex;
-	flex-direction: column;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-header, footer, .section-one {
-	background-color: #1f2937;
-	color: #f9faf8;
-	padding: 0px 16px;
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
 	flex: 1;
 }
 
-/* header section */
+/* HEADER */
 
 header {
+	background-color: #1f2937;
+	color: #f9faf8;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 24px 150px;
 }
 
-.logo {
-	font-size: 24px;
-	font-weight: 900;
-}
-
-ul {
+.header-links {
 	display: flex;
-	list-style-type: none;
 	gap: 16px;
 }
 
-a {
-	text-decoration: none;
+ul {
+	list-style-type: none;
+}
+
+.header-links a {
 	color: #e5e7eb;
+	text-decoration: none;
 	font-size: 18px;
 }
 
-/* section one */
+/* SECTION ONE = HERO */
 
 .section-one {
+	background-color: #1f2937;
 	display: flex;
+	justify-content: space-between;
+	padding: 24px 150px;
 }
 
-.left-side {
-	margin: 16px;
+.right img {
+	background-color: #e5e7eb;
 }
+
+/* .left {
+	max-width: px
+} */
 
 .section-one h1 {
-	font-size: 48px;
 	color: #f9faf8;
 	font-weight: 900;
+	font-size: 48px;
+	max-width: 300px;
 }
 
-/* section two - some random info */
-.section-two {
-	text-align: center;
-	padding: 0px 16px;
+.section-one p {
+	font-size: 18px;
+	color: #e5e7eb;
+	max-width: 400px;
 }
 
-.section-two h1 {
-	font-weight: 900;
-	font-size: 36px;
+.section-one button {
+	color: #e5e7eb;
+	background-color: #3882f6;
+	padding: 8px 20px;
+	border-radius: 8px;
+}
+
+/* SECTION TWO - INFO */
+
+.info-section {
+	padding: 16px 60px;
+}
+
+.info-section h1 {
 	color: #1f2937;
+	font-size: 36px;
+	font-weight: 900;
 	text-align: center;
 }
 
 .cards {
 	display: flex;
-	gap: 16px;
-	justify-content: center;
 }
 
 .card {
-	max-width: 200px;
+	text-align: center;
+
 }
 
-.cards img {
-	width: 150px;
-	height: 150px;
-	border: 3px solid #3882f6;
+/* SECTION THREE - QUOTE */
+
+.quote-section {
+	background-color: #e5e7eb;
+	color: #1f2937;
+	padding: 90px 200px;
+}
+
+.quote {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.name {
+	font-size: 26px;
+	font-weight: bolder;
+	text-align: right;
+}
+
+/* SECTION FOUR - CTA */
+
+.call-to-action {
+	display: flex;
+	justify-content: space-between;
+	background-color: #3882f6;
+	padding: 36px 100px;
+	margin: 80px 150px;
 	border-radius: 10px;
 }
 
-.card p {
-	color: #1f2937;
-	font-size: 18px;
+.text {
+	color: #f9faf8;
 }
 
-/* section three - quote */
-
-.section-three {
-	background-color: #e5e7eb;
-	display: flex;
-	flex-direction: column;
-	padding: 16px;
+.call-to-action button {
+	background-color: #3882f6;
+	color: #f9faf8;
+	border: 2px #f9faf8 solid;
+	border-radius: 5px;
+	padding: 0px 36px;
 }
 
-#quote {
-	font-style: italic;
-	font-weight: 300;
-	color: #1f2937;
-	font-size: 36px;
-	padding: 0px 32px;
-}
+/* FOOTER */
 
-#name {
-	font-weight: bold;
-	align-self: flex-end;
-	font-size: 24px;
-}
-
-/* section four - call to action */
-
-
-/* footer */
 footer {
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #1f2937;
+	color: #f9faf8;
+	text-align: center;
+	padding: 24px 0px;
 }
