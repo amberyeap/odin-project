@@ -46,28 +46,37 @@ ul {
 	background-color: #1f2937;
 	display: flex;
 	justify-content: space-between;
-	padding: 24px 150px;
+	padding: 60px 150px;
+	align-items: center;
+	gap: 40px;
+}
+
+.right {
+	background-color: grey;
+	width: 600px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .right img {
-	background-color: #e5e7eb;
+	color: white;
 }
-
-/* .left {
-	max-width: px
-} */
 
 .section-one h1 {
 	color: #f9faf8;
 	font-weight: 900;
 	font-size: 48px;
-	max-width: 300px;
+	/* max-width: 300px; */
+	line-height: 50px;
 }
 
 .section-one p {
 	font-size: 18px;
 	color: #e5e7eb;
-	max-width: 400px;
+	/* max-width: 400px; */
+	margin: 8px 0px;
 }
 
 .section-one button {
@@ -75,12 +84,13 @@ ul {
 	background-color: #3882f6;
 	padding: 8px 20px;
 	border-radius: 8px;
+	font-size: 16px;
 }
 
 /* SECTION TWO - INFO */
 
 .info-section {
-	padding: 16px 60px;
+	padding: 32px 60px 100px;
 }
 
 .info-section h1 {
@@ -88,15 +98,24 @@ ul {
 	font-size: 36px;
 	font-weight: 900;
 	text-align: center;
+	margin: 0px 0px 36px;
 }
 
 .cards {
 	display: flex;
+	justify-content: center;
+	gap: 40px;
 }
 
 .card {
 	text-align: center;
+}
 
+.card img {
+	border: 4px #3882f6 solid;
+	border-radius: 15px;
+	width: 180px;
+	height: 180px;
 }
 
 /* SECTION THREE - QUOTE */
@@ -124,6 +143,7 @@ ul {
 .call-to-action {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #3882f6;
 	padding: 36px 100px;
 	margin: 80px 150px;
@@ -139,7 +159,8 @@ ul {
 	color: #f9faf8;
 	border: 2px #f9faf8 solid;
 	border-radius: 5px;
-	padding: 0px 36px;
+	padding: 8px 36px;
+	font-size: 16px;
 }
 
 /* FOOTER */
@@ -149,4 +170,5 @@ footer {
 	color: #f9faf8;
 	text-align: center;
 	padding: 24px 0px;
+	margin-top: auto;
 }
